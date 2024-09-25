@@ -18,3 +18,16 @@
 Check if there are items in the list `word`(in case the sentence is ending without a blank space).
 - If there are items join the items in the list `word` and append that list to `self.words`.
 - Return `self.words`.
+
+## MY JOIN
+
+- Define a method `my_join` with one parameter.
+- The parameter of the method is `self` of datatype class object `Sentence`.
+- Assign the instance of the attribute `self.words` to `self.my_split()` to populate `self.words` with a list of words.
+- Define an local variable `wordss`.
+- Assign an `empty string` to the local variable `wordss`.
+- Use the `for loop` to iterate through the list `self.words`.
+- `string` is the loop variable.
+- In the `for loop` add each item(string) in the list `self.words` into the empty string `wordss`, add another string in the end with a blank space.
+- Assign the string `wordss` to the instance of the variable `self.sentence`.
+- Return `self.sentence`
