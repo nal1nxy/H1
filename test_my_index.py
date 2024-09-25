@@ -9,7 +9,7 @@ from sentence import Sentence
 
 def test_my_index_a_word():
     """
-    Test Sentence that has irregular number of spaces between words.
+    a_word is a word that is present in the sentence.
     """
     test_sentence = "Use this area for writing code or taking notes."
     sentence_object = Sentence(test_sentence)
@@ -21,11 +21,24 @@ def test_my_index_a_word():
 
 def test_my_index_a_word_not_in_sentence():
     """
-    Test Sentence that has irregular number of spaces between words.
+    a_word is a word that is not present in the test sentence. 
     """
     test_sentence = "Use this area for writing code or taking notes."
     sentence_object = Sentence(test_sentence)
     a_word = "U$e"
     expected = None
+    actual = sentence_object.my_index(a_word)
+    assert actual == expected
+
+
+def test_my_index_case_sensitivity():
+    """
+    a_word is a word that is present in the sentence,
+    but it is given with a different case
+    """
+    test_sentence = "Use this area for writing code or taking notes."
+    sentence_object = Sentence(test_sentence)
+    a_word = "use"  
+    expected = None  
     actual = sentence_object.my_index(a_word)
     assert actual == expected
