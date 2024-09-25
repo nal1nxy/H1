@@ -24,10 +24,23 @@ Check if there are items in the list `word`(in case the sentence is ending witho
 - Define a method `my_join` with one parameter.
 - The parameter of the method is `self` of datatype class object `Sentence`.
 - Assign the instance of the attribute `self.words` to `self.my_split()` to populate `self.words` with a list of words.
-- Define an local variable `wordss`.
+- Define a local variable `wordss`.
 - Assign an `empty string` to the local variable `wordss`.
 - Use the `for loop` to iterate through the list `self.words`.
 - `string` is the loop variable.
 - In the `for loop` add each item(string) in the list `self.words` into the empty string `wordss`, add another string in the end with a blank space.
 - Assign the string `wordss` to the instance of the variable `self.sentence`.
 - Return `self.sentence`
+
+## MY INDEX
+
+- Define a method `my_join` with two parameters.
+- One parameter of the method is `self` of datatype class object `Sentence`.
+- Another parameter is `a_word` of datatype `string`.
+- The parameter of the method is `self` of datatype class object `Sentence`.
+- Define a local variable `index`.
+- Assign the `integer` `0` to the local variable `index`.
+- Use `for loop` to iterate through the list `self.words` with the iterator variable as `word`.
+- If `word` is `a_word` return `index`.
+- Increment `index` by `1`.
+
