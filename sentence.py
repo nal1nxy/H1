@@ -77,6 +77,12 @@ class Sentence:
         `self.words`.
         - Do NOT use `index()` method.
         """
+        self.words = self.my_split()
+        index = 0
+        for word in self.words:
+            if word == a_word:
+                return index
+            index = index + 1
 
     def my_pop(self, index):
         """
