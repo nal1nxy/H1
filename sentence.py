@@ -31,6 +31,18 @@ class Sentence:
         Implementation requirement:
         - Do NOT use `split() method.
         """
+        word = []
+        self.words = []
+        for i in self.sentence:
+            if i != ' ' and i != '\n':
+                word = word + [i]
+            else:
+                if word:
+                    self.words.append(''.join(word))
+                    word = []
+        if word:
+            self.words.append(''.join(word))
+        return self.words
 
     def my_join(self):
         """

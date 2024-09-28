@@ -21,7 +21,7 @@ def test_my_index_a_word():
 
 def test_my_index_a_word_not_in_sentence():
     """
-    a_word is a word that is not present in the test sentence. 
+    a_word is a word that is not present in the test sentence.
     """
     test_sentence = "Use this area for writing code or taking notes."
     sentence_object = Sentence(test_sentence)
@@ -38,7 +38,7 @@ def test_my_index_case_sensitivity():
     """
     test_sentence = "Use this area for writing code or taking notes."
     sentence_object = Sentence(test_sentence)
-    a_word = "use"  
-    expected = None  
+    a_word = "use"
+    expected = None
     actual = sentence_object.my_index(a_word)
     assert actual == expected

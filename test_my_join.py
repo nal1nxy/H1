@@ -14,7 +14,7 @@ def test_my_join_irregular_spaces():
     test_sentence = "This       is a     string      in multiple   lines"
     sentence_object = Sentence(test_sentence)
     expected = "This is a string in multiple lines"
-    actual = sentence_object.my_join
+    actual = sentence_object.my_join()
     assert actual == expected
 
 
@@ -24,6 +24,6 @@ def test_my_join_special_characters():
     """
     test_sentence = "This !$ @ str!ng in mu|tip|e l!nes"
     sentence_object = Sentence(test_sentence)
-    expected = "This is a string in multiple lines"
-    actual = sentence_object.my_join
+    expected = "This !$ @ str!ng in mu|tip|e l!nes"
+    actual = sentence_object.my_join()
     assert actual == expected
