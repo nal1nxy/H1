@@ -29,5 +29,12 @@ def main():
     print(s_obj.words)
     print(indexed_word)
 
+    s_obj = Sentence('just chekcing')
+    index = 1
+    popped_word = s_obj.my_pop(index)
+    print(s_obj.sentence)
+    print(s_obj.words)
+    print(popped_word)
+
 
 main()

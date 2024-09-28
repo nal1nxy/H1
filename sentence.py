@@ -97,3 +97,15 @@ class Sentence:
         `self.words`.
         - Do NOT use `pop()` method.
         """
+        self.words = self.my_split()
+        # if index < 0:
+        #   return None
+        if index > len(self.words):
+            return None
+        word = self.words[index]
+        new_list = []
+        for current_index in range(len(self.words)):
+            if current_index != index:
+                new_list.append(self.words[current_index])
+        self.words = new_list
+        return word
