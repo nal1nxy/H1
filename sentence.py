@@ -57,6 +57,12 @@ class Sentence:
 
         :return: string
         """
+        self.words = self.my_split()
+        wordss = ""
+        for string in self.words:
+            wordss = wordss + string + " "
+        wordss = wordss.strip()
+        return wordss
 
     def my_index(self, a_word):
         """

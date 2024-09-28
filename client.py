@@ -16,5 +16,11 @@ def main():
     print(s_obj.sentence)
     print(s_obj.words)
 
+    s_obj = Sentence('just chekcing')
+    joined_words = s_obj.my_join()
+    print(s_obj.sentence)
+    print(s_obj.words)
+    print(joined_words)
+
 
 main()
